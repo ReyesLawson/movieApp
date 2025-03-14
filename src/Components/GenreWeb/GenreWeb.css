@@ -1,0 +1,66 @@
+
+.movieInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    list-style: none;
+    left: calc(50% - 100px);
+     text-align: center;
+     justify-content: center;
+
+}
+.search-button{
+    
+     height: 100px !important;
+     width: 100px !important;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+.large-icon {
+     font-size: 150px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #18c115;
+     color: black
+   }
+   
+.icon-container{
+     background-color: #18c115;
+     border: none;
+     padding-top: 50px;
+}
+.button-container{
+     background-color: #18c115;
+     border: none;
+     padding-top: 35px;
+     padding-left: 15px;
+     margin-left: 15px;
+     padding-bottom: 35px;
+}
+
+.bi:hover {
+     color: #ffffff;  /* Change color */
+     transform: scale(1.3);  /* Increase size */
+     transition: transform 0.3s ease, color 0.3s ease;  /* Smooth transition */
+   }
+   
+.movie-container{
+     border: 5px solid rgb(0, 0, 0);
+     padding-bottom: 35px;
+
+   }
+   .peralta-regular {
+     font-family: "Peralta", serif;
+     font-weight: 600;
+     font-style: oblique;
+     color: black;
+     padding-bottom: 35px;
+   }
+   .dropDown{
+     background-color: black;
+     color: #ffffff;
+   }
