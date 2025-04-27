@@ -7,18 +7,21 @@ body{
 }
 
 .App-header {
-  background-color: #18c115;
+  background-image:url(../public/images/movies.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   /* flex-direction: row; */
   align-items: center;
   justify-content: center;
-  color: rgb(0, 0, 0);
+  color: rgb(222, 22, 22);
   font-weight: 600;
 }
 
 .App-link {
-  color: #17e72f;
+  color: rgb(222, 22, 22);
 }
 
 p {
@@ -27,5 +30,6 @@ p {
   align-items: center;
   display: flex !important;
   margin-top: 20px;
+  background-color: rgb(48, 37, 37);
   
 }
