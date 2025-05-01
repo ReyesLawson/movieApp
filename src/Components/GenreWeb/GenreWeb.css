@@ -2,21 +2,24 @@
   display: flex;
   padding-top: 45px;
   width: 100%;
+  
+  justify-content: center;
+  
 }
 .movieInfo {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 20px;
+  background-color: rgb(15, 9, 9);
+  color: rgb(141, 25, 25);
+  border: 1px solid rgb(83, 75, 75) !important;
+  align-items:center;
   list-style: none;
-  text-align: center;
-  justify-content: center;
+  text-align: center !important;
+  justify-content: center !important;
+  width: 100%;
+  padding-top: 5px;
+  margin-top: 10px;
 }
-.about-movie-button {
-  justify-content: center;
 
-  align-items: center;
-}
 .search-button {
   height: 100px !important;
   width: 100px !important;
@@ -43,7 +46,7 @@
   padding-top: 35px;
   margin: 0 auto;
   padding-bottom: 35px;
-  left: calc(20% - 100px);
+  left: calc(20% - 100px) !important;
 }
 .aboutButton {
   background-color: transparent;
@@ -51,16 +54,15 @@
   font-size: 35px;
   border: none;
   width: 100%;
+  flex-direction: column;
 }
 .about-movie-button {
   background-color: transparent;
   color: rgb(141, 25, 25);
-  border: none;
-  width: 100%;
-  margin: 0 auto;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
   align-items: center;
-  text-align: center;
 }
 .bi:hover {
   color: #ece7e7;
@@ -70,13 +72,17 @@
 
 .movie-container {
   padding-bottom: 35px;
-  /* left: calc(20% - 100px); */
   margin: 0;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 975px;
-}
+  width: 100%;
+  padding-left: 35px;
+  flex-direction: column;
+  
+  
+  }
+
 .peralta-regular {
  
   font-weight: 600;
@@ -84,7 +90,7 @@
   color: rgb(255, 248, 243);
   outline: black;
   padding-bottom: 10px;
-  padding-top: 175px;
+  padding-top: 200px;
 }
 .dropDown {
   background-color: black;
@@ -93,17 +99,22 @@
 .title {
   width: 100%;
 }
-@media screen and (max-width: 820px) {
+h1{
+  margin-top: 200px;
+}
+
+
+@media screen and (max-width: 600px) {
   .overall-container {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    
     justify-content: center;
   }
   .movie-container {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    
     justify-content: center;
     text-align: center;
     margin: 0 auto;
@@ -111,7 +122,9 @@
   .button-container {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    
     justify-content: center;
   }
+  
+
 }

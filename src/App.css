@@ -30,6 +30,7 @@ p {
   align-items: center;
   display: flex !important;
   margin-top: 20px;
-  background-color: rgb(48, 37, 37);
+  /* background-color: rgb(48, 37, 37); */
+  
   
 }
