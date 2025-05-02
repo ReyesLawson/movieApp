@@ -58,30 +58,28 @@ function App() {
   return (
     <Container className="title">
       <h1 className="peralta-regular">Not Sure What To Watch ?</h1>
-
-      <select
-        className="dropDown"
-        onChange={(e) => setSelectedGenre(e.target.value)}
-        value={selectedGenre}
-      >
-        <option value="">Select Genre</option>
-        {genres.map((genre) => (
-          <option key={genre.id} value={genre.id}>
-            {genre.name}
-          </option>
-        ))}
-      </select>
-
-      <div className="overall-container">
-        <div className="col-lg-2 col-4 icon-container">
+      <div className="select-container">
+        <select
+          className="dropDown"
+          onChange={(e) => setSelectedGenre(e.target.value)}
+          value={selectedGenre}>
+          <option value="">Select Genre</option>
+          {genres.map((genre) => (
+            <option key={genre.id} value={genre.id}>
+              {genre.name}
+            </option>
+          ))}
+        </select>
+        <div className="icon-container">
           <button className="button-container" onClick={fetchAndStartCycling}>
-            <i className="bi bi-camera-reels large-icon camera-button"></i>
+            <i className="bi bi-camera-reels medium-icon camera-button"></i>
           </button>
         </div>
-
+      </div>
+      <div className="overall-container">
         <section className="movie-container">
           {cycling && movies.length > 0 && (
-            <div className="col-lg-9 col-12">
+            <div className="">
               <img
                 src={`https://image.tmdb.org/t/p/w200${movies[currentMovieIndex]?.poster_path}`}
                 alt={movies[currentMovieIndex]?.title}
@@ -90,7 +88,7 @@ function App() {
           )}
 
           {randomMovie && !cycling && (
-            <div className="col-lg-9 col-12 image-container">
+            <div className="image-container">
               <img
                 className="image-container"
                 src={`https://image.tmdb.org/t/p/w200${randomMovie.poster_path}`}
@@ -99,8 +97,7 @@ function App() {
               {!showInfo ? (
                 <button
                   className="bi bi-info-circle-fill d-flex justify-content-center mt-3 aboutButton"
-                  onClick={() => setShowInfo(true)}
-                ></button>
+                  onClick={() => setShowInfo(true)}></button>
               ) : (
                 <div className="movieInfo">{randomMovie.overview}</div>
               )}
